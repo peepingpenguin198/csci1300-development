@@ -7,6 +7,9 @@ export default function Dish(props) {
                 {dish.name}
             </h3>
             <div className="dish-info" alt="dish-info">
+                <b>Category:</b> {dish.category}
+            </div>
+            <div className="dish-info" alt="dish-info">
                 <b>Prep Time:</b> {dish.preptime} hrs
             </div>
             <div className="dish-info" alt="dish-info">
