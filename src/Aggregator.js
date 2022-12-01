@@ -1,5 +1,5 @@
 export default function Aggregator(props) {
-    const { countMenuItems, menuItems, onAdd, onRemove } = props;
+    const { menuItems, onAdd, onRemove } = props;
     const totalCost = menuItems.reduce((a,c) => a + c.qty * c.cost, 0 );
     const totalPrepTime = menuItems.reduce((a,c) => a + c.qty * c.preptime, 0 );
     const totalCookTime = menuItems.reduce((a,c) => a + c.qty * c.cooktime, 0 );
@@ -43,36 +43,10 @@ export default function Aggregator(props) {
                                 <br/>
                             <b>Total Cook Time:</b> {totalCookTime.toFixed(2)} hrs
                         </div>
-                        {/* <div className="col-1 text-right">
-                            ${totalCost.toFixed(2)}
-                            <br/>
-                            {totalPrepTime.toFixed(2)} hrs
-                            <br/>
-                            {totalCookTime.toFixed(2)} hrs
-                        </div> */}
-
                     </div>
                 </>
                 </div>
-                {/* if countMenuItems isn't  0, show total # */}
-                {/* <a>
-                {countMenuItems? (
-                <button className="badge">{countMenuItems}</button>
-            ) : (
-                ''
-            )}
-                </a> */}
-            {/* <p>
-                <button className="button button-dark">
-                    Clear Items
-                </button>
-            </p> */}
             </aside>
-            {/* <div className="row">
-                {dishes.map((dises) => (
-                    <div>{dishes.name}</div>
-                ))}
-            </div> */}
         </div>
     );
 }
