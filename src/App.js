@@ -51,7 +51,7 @@ function App() {
             Welcome to my Thanksgiving Menu Builder!
           </h2>
           <p>
-            Please select the items you'd like to make for your Thanksgiving feast. This tool will help you determine the total prep & cook time, as well as the total cost required by all the food you want to make.  
+            Please select the items you'd like to make for your Thanksgiving feast. This tool will help you calculate the total prep & cook time, as well as the total cost required by all the food you want to make.  
           </p>
       </div>
           <div className='row'>
