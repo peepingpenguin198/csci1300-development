@@ -63,7 +63,6 @@ function App() {
             />
             <Aggregator 
               menuItems={menuItems}
-              countMenuItems={menuItems.length} 
               onAdd={onAdd} 
               onRemove={onRemove}
               />
